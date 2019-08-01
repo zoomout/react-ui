@@ -6,15 +6,16 @@ class Square extends React.Component {
     render() {
         return (
             <button className="square">
-                {/* TODO */}
+
             </button>
         );
     }
 }
 
 class Board extends React.Component {
-    renderSquare(i) {
-        return <Square />;
+
+    renderSquare(i: number) {
+        return <Square/>;
     }
 
     render() {
@@ -48,7 +49,7 @@ class Game extends React.Component {
         return (
             <div className="game">
                 <div className="game-board">
-                    <Board />
+                    <Board/>
                 </div>
                 <div className="game-info">
                     <div>{/* status */}</div>
@@ -61,7 +62,4 @@ class Game extends React.Component {
 
 // ========================================
 
-ReactDOM.render(
-    <Game />,
-    document.getElementById('root')
-);
+ReactDOM.render(<Game/>, document.getElementById('root'));
